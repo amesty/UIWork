@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView 
+        android:id="@+id/counselor_image"
+        android:layout_width="46dp" 
+        android:layout_height="46dp" 
+        android:layout_margin="5dp"
+        android:src="@drawable/touxiang"/>
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/counselor_name"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/sen_lan" />
+        
+        <LinearLayout 
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <ImageView 
+                android:layout_width="18dp"
+           	    android:layout_height="18dp"
+           	    android:background="@drawable/weizhi_biaoqian"/>
+            
+            <TextView 
+            	android:id="@+id/counselor_address"
+          		android:layout_width="0dp"
+           		android:layout_height="wrap_content"
+           		android:layout_weight="1"
+           		android:textSize="13sp"
+           		android:textColor="#a3a3a3" />
+            
+            <TextView 
+            	android:id="@+id/counselor_rank"
+            	android:layout_marginLeft="13dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textSize="12sp"
+            	android:textColor="@color/blue" />    
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
+            
+            <ImageView 
+                android:layout_width="18dp"
+           	    android:layout_height="20dp"
+           	    android:background="@drawable/shanchang_biaoqian"/>
+            
+            <TextView 
+            	android:id="@+id/counselor_speciality"
+            	android:textSize="13sp"
+            	android:textColor="#a3a3a3"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/counselor_motto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp" 
+            android:textColor="@color/zitiyanse_hui"/>
+
+    </LinearLayout>
+
+</LinearLayout>

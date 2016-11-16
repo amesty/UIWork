@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/title_bg"
+    android:orientation="vertical" >
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        
+        <ImageButton
+        	android:id="@+id/btn_back"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_gravity="center_vertical"
+        	android:background="@drawable/back_bg"
+        	android:layout_marginTop="5dp" />
+    
+    	<TextView 
+        	android:id="@+id/title_text"
+        	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:text="标题"
+        	android:layout_marginRight="40dp"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:textColor="#ffff"
+        	android:gravity="center" />
+    	
+		 <ImageButton
+        	android:id="@+id/fenxiang_imageBt"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_gravity="center_vertical"
+        	android:background="@drawable/fenxiang"
+        	android:layout_marginTop="5dp" />
+    
+    
+    </LinearLayout >
+    
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/title_xian" />
+    
+</LinearLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+			    <LinearLayout 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical"
+			        android:layout_marginLeft="12dp"
+			        android:layout_marginRight="12dp">
+					    <TextView 
+					        android:id="@+id/article_tag"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:textColor="@color/zitiyanse_hui"
+					        android:gravity="center"
+					        android:text="文章标签"
+					        android:textSize="16dp"
+					        android:paddingTop="10dp"
+					        android:paddingBottom="10dp"/>
+					    
+					    <View 
+					        android:id="@+id/article_fengexian"
+					        android:layout_width="match_parent"
+					        android:layout_height="1dp"
+					        android:background="@drawable/fengexian"
+					        />
+					    
+					    <TextView 
+					        android:id="@+id/article_detail_title"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:paddingTop="10dp"
+					        android:paddingBottom="10dp"
+					        android:text="标题"
+					        android:textSize="24sp"
+					        android:gravity="center"
+					        />
+					    
+					    <RelativeLayout 
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:paddingTop="8dp"
+					        android:paddingBottom="8dp"
+					        >
+					            <TextView 
+								        android:id="@+id/article_publisher"
+								        android:layout_width="wrap_content"
+								        android:layout_height="wrap_content"
+								        android:layout_alignParentLeft="true"								        
+								        android:text="发表人"
+								        android:textColor="@color/senhui"
+								        android:textSize="12dp"/>
+								    <TextView 
+								        android:id="@+id/article_publish_date"
+								        android:layout_width="wrap_content"
+								        android:layout_height="wrap_content"
+								        android:layout_alignParentRight="true"
+								        android:text="发表日期"
+								        android:textColor="@color/senhui"
+								        android:textSize="12dp"    
+								        />
+					    </RelativeLayout>
+					    
+					    <ImageView
+					        android:id="@+id/article_pic"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:paddingBottom="10dp"
+					        android:scaleType="centerInside"
+					        android:src="@drawable/article_moren" />
+
+					    <TextView 
+					        android:id="@+id/article_content"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:layout_marginTop="3dp"
+					        android:text="\t\t这里是文章的内容lalallalalalalaalla"
+					        android:paddingTop="5dp"
+					        android:paddingBottom="20dp"
+					        android:textSize="20dp"
+					        android:textColor="@color/zitiyanse_hui"
+					        android:lineSpacingExtra="4dp"/>
+					    
+					  
+					    <LinearLayout 
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:orientation="horizontal"
+					        android:padding="10dp"
+					        android:gravity="center"
+					        >
+					        
+					        <ImageButton 
+					            android:id="@+id/dianzan_imageBt"
+					            android:layout_width="wrap_content"
+					            android:layout_height="match_parent"					           
+					            android:src="@drawable/good"
+					            android:layout_gravity="center_vertical"
+					            android:background="@color/white"
+					            />
+					        
+					         <TextView
+				            	android:id="@+id/dianzan_tv"
+				            	android:layout_width="wrap_content"
+				            	android:layout_height="match_parent"            	
+				            	android:layout_marginLeft="5dp"
+				            	android:layout_marginTop="9dp"
+				            	android:textColor="@color/zitiyanse_hui"
+				            	android:textSize="14sp" 
+				            	android:text="点赞数"
+				            	android:paddingRight="5dp"/>
+					 
+					        <ImageButton 
+					            android:id="@+id/comment_imageBt"
+					            android:layout_width="wrap_content"
+					            android:layout_height="match_parent"					            
+					            android:src="@drawable/commentcount"
+					            android:layout_gravity="center_vertical"
+					            android:background="@color/white"
+					            android:paddingLeft="5dp"/>
+					  
+					        <TextView
+				            	android:id="@+id/commentcount_tv"
+				            	android:layout_width="wrap_content"
+				            	android:layout_height="match_parent"            	
+				            	android:layout_marginLeft="5dp"
+				            	android:layout_marginTop="9dp"
+				            	android:textColor="@color/zitiyanse_hui"
+				            	android:textSize="14sp"
+				            	android:text="评论数" />
+					
+					    </LinearLayout>
+					    					    
+				</LinearLayout>
+				
+    </ScrollView>
+
+</LinearLayout>

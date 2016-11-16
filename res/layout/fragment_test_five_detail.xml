@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:id="@+id/test_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_title"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:textColor="@color/senhui"
+        android:textSize="24dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_question"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp" 
+        android:visibility="gone">
+
+        <RadioButton 
+	            android:id="@+id/radioBt_A"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textSize="18sp"
+	            android:textColor="@color/zitiyanse_hui"
+	            
+	            />
+
+       <RadioButton 
+	            android:id="@+id/radioBt_B"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textSize="18sp"
+	            android:textColor="@color/zitiyanse_hui"
+	            
+	            />
+
+        <RadioButton 
+	            android:id="@+id/radioBt_C"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textSize="18sp"
+	            android:textColor="@color/zitiyanse_hui"
+	            android:checked="false"
+	            />
+
+       <RadioButton 
+	            android:id="@+id/radioBt_D"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textSize="18sp"
+	            android:textColor="@color/zitiyanse_hui"
+	           
+	            />
+
+        <RadioButton 
+	            android:id="@+id/radioBt_E"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textSize="18sp"
+	            android:textColor="@color/zitiyanse_hui"
+	           
+	            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@color/BlueColor"
+        android:text="下一题"
+        android:textColor="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone" />
+    
+    <LinearLayout 
+        android:id="@+id/two_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/next_Question"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        >
+    
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        >
+		    
+				    <TextView 
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="问题个数："
+				        android:textColor="@color/zitiyanse_hui"
+				        />
+				    
+				    <TextView 
+				        android:id="@+id/test_questionNum"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="个数"
+				        android:textColor="@color/zitiyanse_hui"
+		        />
+		    </LinearLayout>
+		    
+		    
+		      <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        >
+				    
+				    <TextView 
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="已答个数："
+				        android:textColor="@color/zitiyanse_hui"
+				        />
+				    
+				    <TextView 
+				        android:id="@+id/test_answerNum"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="已答"
+				        android:textColor="@color/zitiyanse_hui"
+		        />
+		    </LinearLayout>
+		    
+	</LinearLayout>
+</RelativeLayout>

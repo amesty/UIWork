@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        
+        <ImageView 
+            android:id="@+id/user_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/touxiang"/>
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+            
+            <TextView 
+            	android:id="@+id/username_tv"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/sen_lan"
+            	android:text="xxx"
+            	android:textSize="12sp"
+            	android:layout_gravity="center_vertical"/>
+            
+            <TextView 
+            	android:id="@+id/time_tv"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/time_hui"
+            	android:textSize="10sp"
+            	android:text="mm-dd hh:mm"
+            	android:paddingTop="3dp"/>
+            
+        </LinearLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#bbbbbb"
+            android:textSize="12sp"
+            android:paddingTop="7dp"
+            android:text="0"/>
+        
+        <ImageView 
+            android:id="@+id/good_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingLeft="3dp"
+            android:src="@drawable/good"/>
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="content"
+        android:textSize="15sp"
+        android:layout_marginLeft="35dp"/>
+
+</LinearLayout>

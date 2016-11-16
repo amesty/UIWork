@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/qianhui" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <ImageView 
+            android:layout_width="9dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/yansetiao_orange"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="预约时间："
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/appoint_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mm-dd hh:mm"
+                    android:textColor="@color/time_hui"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:id="@+id/appoint_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="预约成功"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:orientation="horizontal"
+               android:background="@color/qianhui">
+               <ImageView 
+                   android:id="@+id/appoint_counselor_tx"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:src="@drawable/touxiang_moren"/>
+               <LinearLayout 
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <TextView 
+                       android:id="@+id/appoint_counselor_name"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="5dp"
+                       android:text="counselor_name"
+                       android:textSize="14sp"/>
+                   <TextView 
+                       android:id="@+id/appoint_cousult_way"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="5dp"
+                       android:text="counsult_way"
+                       android:textSize="12sp"
+                       android:textColor="@color/time_hui"/>
+               </LinearLayout>
+               <LinearLayout 
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:gravity="right"
+		            android:layout_marginRight="10dp">
+		            <TextView 
+			            android:id="@+id/appoint_state"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="15dp"
+			            android:text=">>"
+			            android:textSize="12sp"
+			            android:textColor="@color/time_hui"/>
+		       </LinearLayout>
+           </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

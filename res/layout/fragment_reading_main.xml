@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <LinearLayout 
+        android:id="@+id/read_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        >
+        <Button 
+            android:id="@+id/bt_all_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="精选"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            />
+         <Button 
+            android:id="@+id/bt_family_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="家庭"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            />
+          <Button 
+            android:id="@+id/bt_health_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="健康"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            />
+           <Button 
+            android:id="@+id/bt_job_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="职场"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            />
+            <Button 
+            android:id="@+id/bt_marrige_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="婚姻"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            />
+            
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/cover_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"        
+        android:background="#0099FF" />
+    
+    
+    <!--可滑动的布局内容-->
+    <android.support.v4.view.ViewPager 
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/read_guide"
+        android:layout_marginTop="3dp"
+        />
+
+</RelativeLayout>

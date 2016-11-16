@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dip"
+            android:background="@drawable/popup_titlebar"
+            android:gravity="center"
+            android:text="提醒"
+            android:textColor="#7e7e7e"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/tv_confirm_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="确定要退出吗？"
+                android:textColor="@color/senhui"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFB8B8B8" />
+
+        <include layout="@layout/dialog_button_bar" />
+    </LinearLayout>
+
+</ScrollView>

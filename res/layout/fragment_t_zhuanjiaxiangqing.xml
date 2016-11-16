@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"  >
+    
+    <com.example.fragment.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></com.example.fragment.TitleLayout>
+    
+    <ImageView 
+        android:src="@drawable/touxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+    
+    <TextView 
+        android:text="李悦"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/zitiyanse_hui"
+        android:textSize="18sp"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weizhi_biaoqian"/>
+        
+        <TextView 
+            android:text="上海市"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zitiyanse_hui"
+            android:textSize="12sp"/>
+        
+        <TextView 
+            android:paddingLeft="10dp"
+            android:text="心理咨询师/临床催眠治疗师"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zitiyanse_hui"
+            android:textSize="12sp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp">
+        
+        <ImageView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginRight="10dp"
+        	android:src="@drawable/shoucangrenshu"/>
+        
+        <TextView 
+            android:text="56人"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="14sp"/>
+        
+        <ImageView 
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoudaoganxie"/>
+        
+        <TextView 
+            android:text="102个"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="14sp"/>
+    
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/xian_yanse"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="咨询方式"
+        android:textColor="@color/zitiyanse_hui"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/dianhua"
+            android:text="¥300/小时"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        
+        <TextView 
+            android:id="@+id/shipin"
+            android:text="¥400/小时"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        
+        <TextView 
+            android:id="@+id/mianduimian"
+            android:text="¥500/小时"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zixunfangshi"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/xian_yanse"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp">
+        
+        <ImageView 
+            android:id="@+id/user_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/touxiang"/>
+        
+        <TextView
+            android:id="@+id/username_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="xxx"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/sen_lan"
+            android:textSize="15sp" />
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginRight="10dp">
+            
+            <ImageView 
+            	android:layout_width="20dp"
+            	android:layout_height="20dp"
+            	android:contentDescription="@string/app_name"
+            	android:src="@drawable/time_at"
+            	android:layout_gravity="center_vertical"/>
+        
+        	<TextView 
+            	android:id="@+id/time_tv"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/time_hui"
+            	android:textSize="11sp"
+            	android:text="mm-dd hh:mm"
+            	android:layout_gravity="center_vertical"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#1e1e1e"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="!!!"
+        android:maxLines="5"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:padding="5dp">
+        
+        <ImageView 
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tag"/>
+        
+        <TextView
+            android:id="@+id/question_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="1234"
+            android:textColor="@color/time_hui"
+            android:textSize="12sp" />
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginRight="10dp">
+            
+            <ImageView 
+            	android:layout_width="21dp"
+            	android:layout_height="21dp"
+            	android:src="@drawable/msg"/>
+
+        	<TextView 
+            	android:id="@+id/answer_count_tv"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="0"
+            	android:layout_gravity="center_vertical"
+            	android:textSize="12sp"
+            	android:textColor="@color/time_hui"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

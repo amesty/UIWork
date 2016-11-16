@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <com.example.fragment.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></com.example.fragment.TitleLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+  
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        
+        <include layout="@layout/item_question" />
+    </LinearLayout>
+    
+    <View 
+        	android:layout_width="match_parent"
+        	android:layout_height="2px"
+        	android:layout_marginLeft="15dp"
+        	android:layout_marginRight="15dp"
+        	android:layout_marginTop="8dp"
+        	android:background="@color/xian_yanse"/>
+    
+    <LinearLayout
+        android:id="@+id/question_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.59"
+        android:orientation="vertical" >
+        
+        <ImageView 
+            android:layout_width="65dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/answer"/>
+    	
+    	<ListView 
+    	    android:id="@+id/comment_lv"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="1"
+    	    android:divider="@null"/>
+ 
+    	<TextView
+    	    android:id="@+id/tv_empty"
+    		android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:text="暂无回答"
+    		android:textColor="@color/button_gray"
+    		android:visibility="gone"
+    		android:textSize="17sp" />
+        
+    </LinearLayout>
+    </LinearLayout>
+	</ScrollView>
+    
+	<LinearLayout 
+	    android:id="@+id/answer_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="2"
+	    android:orientation="vertical"
+	    android:visibility="visible">
+    	
+	    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/xian_yanse"/>
+    	
+    	<Button 
+        	android:id="@+id/main_send"
+        	android:background="@drawable/answer_shape"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="15dp"
+        	android:layout_marginRight="15dp"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginBottom="10dp"
+        	android:text="我 来 回 答"
+        	android:textColor="#ffff"
+        	android:textSize="15sp"/>  
+	</LinearLayout>"
+</LinearLayout>
